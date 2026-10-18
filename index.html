@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo de recetas</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 2rem; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #999; padding: 0.4rem 0.8rem; text-align: left; }
+    tr.vegetariana td:first-child { border-left: 6px solid #2e7d32; }
+  </style>
+</head>
+<body>
+  <h1>Catálogo de recetas</h1>
+  <p><em>Demo estática de solo lectura con datos de ejemplo. La aplicación completa (Express + SQLite) se ejecuta con <code>npm start</code>. <a href="recetas.json">Ver recetas.json</a></em></p>
+  <table>
+    <thead>
+      <tr><th>Id</th><th>Nombre</th><th>Ingredientes</th><th>Minutos</th><th>Vegetariana</th></tr>
+    </thead>
+    <tbody>
+      
+        <tr class="vegetariana">
+          <td>1</td>
+          <td>Tacos de frijol</td>
+          <td>tortilla, frijol, cebolla, cilantro</td>
+          <td>20</td>
+          <td>Sí</td>
+        </tr>
+      
+        <tr class="">
+          <td>2</td>
+          <td>Pozole rojo</td>
+          <td>maíz pozolero, cerdo, chile guajillo, orégano</td>
+          <td>180</td>
+          <td>No</td>
+        </tr>
+      
+        <tr class="vegetariana">
+          <td>3</td>
+          <td>Quesadillas de flor de calabaza</td>
+          <td>tortilla, queso, flor de calabaza</td>
+          <td>15</td>
+          <td>Sí</td>
+        </tr>
+      
+        <tr class="">
+          <td>4</td>
+          <td>Chilaquiles verdes</td>
+          <td>totopos, salsa verde, pollo, crema</td>
+          <td>25</td>
+          <td>No</td>
+        </tr>
+      
+    </tbody>
+  </table>
+</body>
+</html>
